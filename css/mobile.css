@@ -1,0 +1,54 @@
+/* Services*/
+.services .services__container {
+  display: block;
+  padding: 2rem 1rem;
+}
+
+/* Smartphone styling*/
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .navbar .ul {
+    padding: 0.5rem;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .about .about__img {
+    display: none;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact__map {
+    height: 300px;
+    border-top: 4px solid #333333;
+  }
+}
+
+@media (max-width: 568px) {
+  .showcase .showcase__content {
+    margin-top: -2rem;
+    top: 130px;
+  }
+
+  .showcase .showcase__heading {
+    font-size: 3rem;
+  }
+
+  .showcase__lead {
+    font-size: 1rem;
+  }
+}
