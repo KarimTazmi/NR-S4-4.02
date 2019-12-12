@@ -164,6 +164,7 @@ p {
 
 .clients .clients__single {
   display: flex;
+  justify-content: center;
 }
 
 .clients .clients__single img {
