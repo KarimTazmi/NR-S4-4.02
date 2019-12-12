@@ -20,7 +20,7 @@ p {
 }
 
 /* Utility Classes*/
-.text-primary {
+.text__primary {
   color: #93cb52;
 }
 
@@ -60,20 +60,19 @@ p {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: #333333 url('/img/showcase.jpg')
-  no-repeat center center/cover;
+  background: #333333 url("/img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #ffffff;
-  padding: 0 10%; 
+  padding: 0 10%;
 }
 
-.showcase-heading {
+.showcase__heading {
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 1.2;
 }
 
-.showcase-lead {
+.showcase__lead {
   color: #ffffff;
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -92,23 +91,129 @@ p {
   background-color: #7ab436;
 }
 
-.button-dark {
+.button__dark {
   background-color: #333333;
   color: #ffffff;
 }
 
-/* Services */
+.button__dark:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Section: Services */
 .services {
-  padding: 1.5rem 10%;
+  padding: 2rem 10%;
   text-align: center;
 }
 
-.services-container {
+.services__container {
   display: flex;
 }
 
-.services-heading {
+.services__heading {
   font-size: 2rem;
+  margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
+}
+
+.services .single__service {
+  padding: 4rem 2.5%;
+}
+
+.services .single__service i {
+  background-color: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: About */
+.about {
+  display: flex;
+}
+
+.about div {
+  flex: 1;
+  padding: 4rem;
+  background-color: #333333;
+  color: #f4f4f4;
+}
+
+.about .about__img {
+  background: url("/img/people.jpg") no-repeat center center/cover;
+}
+
+.about ul {
+  list-style: none;
+}
+
+/* Section: Clients */
+.clients {
+  text-align: center;
+  padding: 4rem;
+}
+
+.clients .clients__heading {
+  font-size: 2rem;
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.clients .clients__single {
+  display: flex;
+}
+
+.clients .clients__single img {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+/* Section: Contact */
+.contact {
+  display: flex;
+}
+
+.contact__heading {
+  color: #333333;
+}
+
+.contact .contact__map,
+.contact .contact__form {
+  flex: 1;
+}
+
+.contact__form {
+  background-color: #93cb52;
+  color: #ffffff;
+  padding: 1.5rem;
+}
+
+.contact .contact__form .form__group {
+  margin: 0.75rem;
+}
+
+.contact .contact__form label {
+  display: block;
+}
+
+.contact .contact__form input,
+.contact .contact__form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #f4f4f4;
+}
+
+/*Footer*/
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
 }

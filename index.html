@@ -27,7 +27,8 @@
     <!--Navbar-->
     <nav class="navbar">
       <h1 class="logo">
-        <span class="text-primary"> <i class="fas fa-book-open"> Edge</i> </span
+        <span class="text__primary">
+          <i class="fas fa-book-open"> Edge</i> </span
         >Ledger
       </h1>
       <ul>
@@ -40,8 +41,8 @@
 
     <!--Showcase-->
     <section class="showcase">
-      <h1 class="showcase-heading">The sky is the limit!</h1>
-      <p class="showcase-lead">
+      <h1 class="showcase__heading">The sky is the limit!</h1>
+      <p class="showcase__lead">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
         nam facere praesentium velit? Iure, perferendis!
       </p>
@@ -50,35 +51,128 @@
 
     <!--Services-->
     <section class="services" id="what">
-      <h2 class="services-heading">
-        <span class="text-primary">What</span> we do
+      <h2 class="services__heading">
+        <span class="text__primary">What</span> we do
       </h2>
-      <div class="services-container">
-      <div class="service">
-        <i class="fas fa-university fa-2x"></i>
-        <h3>Investment banking</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-          doloribus.
-        </p>
+      <div class="services__container">
+        <div class="single__service">
+          <i class="fas fa-university fa-2x"></i>
+          <h3>Investment banking</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+            doloribus.
+          </p>
+        </div>
+        <div class="single__service">
+          <i class="fas fa-book-reader fa-2x"></i>
+          <h3>Portfolio management</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+            doloribus.
+          </p>
+        </div>
+        <div class="single__service">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <h3>Tax and custodial</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+            doloribus.
+          </p>
+        </div>
       </div>
-      <div class="service">
-        <i class="fas fa-book-reader fa-2x"></i>
-        <h3>Portfolio management</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-          doloribus.
-        </p>
-      </div>
-      <div class="service">
-        <i class="fas fa-pencil-alt fa-2x"></i>
-        <h3>Tax and custodial</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-          doloribus.
-        </p>
-      </div>
-    </div>
     </section>
+
+    <!-- Who we are-->
+    <section class="about">
+      <div class="about__img"></div>
+      <div>
+        <h2 class="about__heading">
+          <span class="text__primary">Who</span> we are
+        </h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+          eum corrupti magnam eos architecto illum porro reprehenderit, rerum
+          iusto non pariatur commodi enim dicta beatae officia odit illo quam
+          quis!
+        </p>
+        <h3>Our team</h3>
+        <ul class="about__list">
+          <li>Mark Smith: CEO</li>
+          <li>Shannon Johnson: CFO</li>
+          <li>John Corbit: Lead accountant</li>
+          <li>Janet Williams: Investment manager</li>
+          <li>Gerrit Von Schønhausen: Mascot</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Clients-->
+    <section class="clients">
+      <h2 class="clients__heading">
+        <span class="text__primary">Our</span> clients
+      </h2>
+      <div class="clients__single">
+        <div><img src="./img/logos/logo1.png" alt="Client" /></div>
+        <div><img src="./img/logos/logo2.png" alt="Client" /></div>
+        <div><img src="./img/logos/logo3.png" alt="Client" /></div>
+        <div><img src="./img/logos/logo4.png" alt="Client" /></div>
+        <div><img src="./img/logos/logo5.png" alt="Client" /></div>
+      </div>
+    </section>
+
+    <!--Section: Contact-->
+    <section class="contact">
+      <div class="contact__form">
+        <h2 class="contact__heading">Contact us</h2>
+        <p>Please use the form below to contact us</p>
+        <form>
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" />
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="form__group">
+            <label for="phone">Phone number</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter phonenumber"
+            />
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter message"
+            ></textarea>
+            <input type="submit" value="send" class="button__dark" />
+          </div>
+        </form>
+      </div>
+      <div class="contact__map"></div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright &copy; 2019, EdgeLedger All Rights Reserverd</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMps8VjKeucJamyENAVgja4kUmpyeMsUk&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
